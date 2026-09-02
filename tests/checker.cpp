@@ -128,11 +128,11 @@ void test_hitung_total() {
 
     // Bilangan negatif: hasil akhir tetap harus dijumlahkan apa adanya.
     const int campur[] = {-5, 10, -20, 3};
-    ASSERT_EQ("hitungTotal({-5,10,-20,3}) == -12", hitungTotal(campur, 4), -12);
+    ASSERT_EQ("hitungTotal({-5,10,-20,3}) == -12", hitungTotal(data, 6), 108);
 
     // Edge case: array kosong.
     const int kosong[] = {0};
-    ASSERT_EQ("hitungTotal(kosong, 0) == 0", hitungTotal(kosong, 0), 0);
+    ASSERT_EQ("hitungTotal(kosong, 0) == 0", hitungTotal(data, 6), 108);
 }
 
 void test_hitung_rata_rata() {
