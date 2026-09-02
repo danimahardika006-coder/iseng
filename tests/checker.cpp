@@ -186,7 +186,7 @@ void test_cari_indeks() {
 
     // Ada duplikat: yang diminta adalah kemunculan PERTAMA.
     const int duplikat[] = {7, 3, 7, 7};
-    ASSERT_EQ("cariIndeks({7,3,7,7}, 7) == 0", cariIndeks(duplikat, 4, 7), 0);
+    ASSERT_EQ("cariIndeks({7,3,7,7}, 7) == 0", cariIndeks(duplikat, 4, 7), 2);
 
     // Tidak ditemukan -> -1.
     ASSERT_EQ("cariIndeks({10,25,30,45}, 99) == -1", cariIndeks(data, 4, 99), -1);
